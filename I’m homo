@@ -1,0 +1,46 @@
+//Mod Menu Code 
+//Money Injector 
+#include <iostream> 
+using namespace std; 
+  
+int main()  {   
+
+	//Declare variables  
+	int money;
+
+    //Display mod menu options to user  
+	cout << "Welcome to the GTA Online Mod Menu!" << endl;  
+
+	while (true) {    
+
+        cout << "\nPlease select an option from the list below: \n"     
+
+            "\t1. Spawn Vehicle\n"        
+
+            "\t2. Get Money\n"     
+
+            "\t3. Quit\n";    
+
+        int choice;     cin >> choice;    
+
+        switch (choice) {      
+
+            case 1: //Spawn Vehicle code goes here        
+			cout << "You have spawned a vehicle!" << endl; 
+                break;      
+
+            case 2: //Money Injector code goes here         
+
+		cout <<"Please enter the amount of money you want to inject into your GTA Online account:" <<endl;  
+           cin >>money; 
+           cout<< "You have successfully injected $"<<money<<" into your account!"<<endl;   
+                break;     
+
+            case 3: //Quit program       
+              return 0 ;       
+
+            default:        
+
+              cout << "Invalid Option. Please try again.";    
+
+        }  
